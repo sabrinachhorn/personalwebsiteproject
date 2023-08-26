@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56156becd0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#awards">Honors, Awards, Fellowships</a></li>
+                <li><a href="#portfolio">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>            
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Legal Studies and Sociology Major</p>
+            <h1>Hi there! I'm <span>Sabrina Chhorn</span>:<br>Welcome to my webpage!</h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="sub-title">About Me</h1>
+                <p>Serving the public is my ultimate goal, with global and international affairs as defining features of my interests. This is exemplified in my academics and my personal pursuits. I've been inducted into the most prestigious academic societies for demonstrated excellence in both multidisciplinary studies and social sciences respectively. Although I will soon be bolstering my research experience during the fall semester, I am hoping to do the same with professional pursuits such as interning in a law firm to get more acquainted with practical legal experience. Outside of academics and professional development, I get involved with the community through my Asian-interest organization the Kappa Phi Lambda Sorority, Inc., hosting campus events pertaining to AAPI issues, community service, and fundraising for philanthropies such as CARE International and Stop It Now!. You can also find me performing with my dance team, Altitude's 5:Dirty Crew. Please read more about me and my (VERY briefly explained) experiences below and contact me if you have any questions about them or anything at all!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Relevant Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Legal/Policy Research</span><br>Utilize databases like Westlaw and Congress.gov to get the most in-depth information about laws and policies.</li>
+                        <li><span>Memo Writing</span><br>Write concise memos consolidating the most important and relevant information for efficient information about news, meetings, and policy.</li>
+                        <li><span>Database Management</span><br>Manage databases (such as EndNote and Intranet Quorum) containing thousands of research data, correspondence, and documents.</li>
+                        <li><span>Programming</span><br>Basic knowledge of R, HTML, and Javascript.</li>
+                        <li><span>Multi-lingual</span><br>Certified bi-literate in Spanish, fluent in verbal Khmer, and speaks elementary Korean.</li>
+                        <li><span>Canva and Adobe Lightroom</span><br>Manage, design posts for, and market social media accounts for outreach purposes.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2022 - Feb 2023</span><br>Study Guide Assistant: UMass Legal Studies Department</li>
+                        <li><span>May 2022 - Aug 2022</span><br>Legislative Intern: D.C. Office of Congresswoman Katherine Clark (MA-05)</li>
+                        <li><span>Feb 2022 - May 2022</span><br>Research Assistant: UMass Legal Studies Department</li>
+                        <li><span>Sep 2021 - May 2022</span><br>Peer Adviser: UMass SBS Pathways Center (Academic and Career Advising)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Expected May 2024</span><br>University of Massachusetts Amherst: Legal Studies and Sociology Double Major; IT Minor; International Relations Certificate; Letter of Specialization in International and Comparative Law. GPA: 4.00/4.00.</li>
+                        <li><span>Feb 2023 - June 2023</span><br>Korea University: Study abroad experience, studying in the Department of International Studies and Sociology Department.</li>
+                        <li><span>Aug 2016 - June 2020</span><br>Waterford High School: Top 5 in academic class, unweighted GPA: 4.11/4.00.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--honors and awards-->
+<div id="awards">
+    <div class="container">
+        <h1 class="sub-title">Honors, Awards, Fellowships</h1>
+        <div class="awards-list">
+            <div>
+                <i class="fa-solid fa-book-open" style="color: #ffffff;"></i>
+                <h2>Phi Kappa Phi Honor Society</h2>
+                <p>Achieved academic excellence in multidisciplinary studies, top 7.5% of entire academic class.</p>
+                <a href="https://www.phikappaphi.org/members/eligibility-requirements">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scale-balanced" style="color: #ffffff;"></i>
+                <h2>Phi Beta Kappa Honor Society</h2>
+                <p>Demonstrated academic excellence in social sciences.</p>
+                <a href="https://www.pbk.org/Requirements">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i>
+                <h2>International Scholars Program</h2>
+                <p> Fellow in Commonwealth Honors College program dedicated to cultural education and financial support prior to a study abroad experience.</p>
+                <a href="https://www.umass.edu/honors/opportunities-enrich-your-academic-experience/international-scholars-program">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tie" style="color: #ffffff;"></i>
+                <h2>SBS in DC Program</h2>
+                <p>Fellow in a competitive cohort to live and intern in Washington, D.C. where I interned in the U.S. House of Representatives. </p>
+                <a href="https://sbspathways.umass.edu/channels/sbs-in-dc/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-dress" style="color: #ffffff;"></i>
+                <h2>UMass Women into Leadership Program</h2>
+                <p>Fellow in a competitve cohort to network, professionally develop, and gain leadership skills while emphasizing women's barriers in public leadership</p>
+                <a href="https://www.umass.edu/uwil/about">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>
+                <h2>Dean's List</h2>
+                <p>Maintained a GPA above 3.50 all semesters of undergraduate career.</p>
+                <a href="https://www.umass.edu/registrar/students/deans-list">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                <h2>Lang Global Scholar Award</h2>
+                <p>Awarded to International Scholars Program members in good academic standing and financial need.</p>
+                <a href="https://minutefund.umass.edu/project/30043">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gavel" style="color: #ffffff;"></i>
+                <h2>Jeanette E. Maillet Scholarship</h2>
+                <p>For underrepresented, academically successful College of Social and Behavioral Sciences students with aspiring careers in government on all levels..</p>
+                <a href="https://minutefund.umass.edu/project/24045">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--experiences-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png"> 
+                <div class="layer">
+                    <h3>Democratic Reproductive Rights Rally</h3>
+                    <p>I stood behind the same podium as the top Democratic women in leadership
+                        including AOC, Nancy Pelosi, and Ayanna Pressley!</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png"> 
+                <div class="layer">
+                    <h3>Lunch with Rep. Clark</h3>
+                    <p>Rep. Clark took me and the other interns out for lunch, it was amazing! We all got to learn so much about her career and why she is passionate about serving the public.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png"> 
+                <div class="layer">
+                    <h3>Attending Korea University</h3>
+                    <p>One of the top 3 prestigious "SKY" universities in South Korea where I studied for a semester in my junior year.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-envelope" style="color: #ffffff;"></i>sabrinachhorn@gmail.com</p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>schhorn@umass.edu</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sabrina-chhorn/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sabrina_chhorn/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/sabrina.chhorn/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg">Click submit to send me a message!</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sabrina Chhorn</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXkQXNOIBG_QhRlUemAjkh3yJnrZcTx1HvSdCEYbRbcSPCRxYMx8p0qmDa7-oO6v4lgA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully, I will be in touch soon!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, timeout);
+            form.reset()
+        },5000)
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
